@@ -10,8 +10,7 @@ get_header(); ?>
 if (have_posts()) :
   while (have_posts()) : the_post();
 ?>
-    <div class="background-color">
-    </div>
+
 
     <section class="overview_description">
       <div class="container">
@@ -36,7 +35,7 @@ if (have_posts()) :
     <section class="module">
       <div class="container">
         <div class="row">
-          <div class="col-10 offset-lg-1">
+          <div class="col">
             <div id="report-2021-table"></div>
           </div>
     </section>
