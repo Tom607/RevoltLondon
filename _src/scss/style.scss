@@ -1,0 +1,20 @@
+/*
+Theme Name: Revolt v2
+Theme URI:
+Author: Lattimore and Friends
+Author URI: https://lattimoreandfriends.com/
+*/
+@import "base/_fonts";
+@import "utils/_mixins";
+@import "utils/_variables";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/content";
+@import "layout/home";
+@import "layout/overview_page";
+@import "layout/blog";
+@import "layout/case_study";
+@import "layout/about";
+@import "layout/tools";
+@import "layout/hustle";

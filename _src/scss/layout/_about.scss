@@ -1,0 +1,188 @@
+.three_pillars {
+  @media (min-width: $min_small) {
+    margin-top: 10vw;
+  }
+  .container {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+      @media (min-width: $min_large) {
+        margin-bottom: 22px;
+      }
+    }
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      position: relative;
+      padding: 10px 80px 10px 0;
+      font-size: 26px;
+      border-top: 1px solid $light-grey;
+      @media (min-width: $min_small) {
+        font-size: 30px;
+      }
+      @media (min-width: $min_medium) {
+        font-size: 35px;
+        right: 10px;
+      }
+      @media (min-width: $min_large) {
+        right: 10px;
+        font-size: 45px;
+      }
+      &:before {
+        position: absolute;
+        content: "→";
+        top: 50%;
+        right: 5px;
+        color: #fff;
+        font-size: 35px;
+        font-weight: normal;
+        width: 20px;
+        height: 25px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-50%) rotate(90deg);
+        @media (min-width: $min_small) {
+          font-size: 50px;
+        }
+        @media (min-width: $min_medium) {
+          font-size: 60px;
+          right: 10px;
+        }
+        @media (min-width: $min_large) {
+          right: 10px;
+          font-size: 55px;
+        }
+      }
+    }
+    .is-active:before {
+      transform: translateY(-50%) translateX(4px) rotate(-90deg);
+    }
+    .accordion_content {
+      display: none;
+    }
+  }
+}
+
+.team {
+  &_section {
+    @media (min-width: $min_xsmall) and (max-width: 575px) {
+      margin: 0 auto;
+      max-width: 350px;
+    }
+  }
+  &_grid {
+    padding: 20px 11px;
+  }
+
+  &_member {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    .member-bg-holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      transition: 100ms cubic-bezier(0.47, 0, 0.745, 0.715) opacity;
+    }
+
+    @media (min-width: 576px) {
+      margin-bottom: 10px;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+    h6,
+    p {
+      display: block;
+      margin: 0;
+      color: #fff;
+    }
+    // .bg_color {
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   transition: all $time;
+    //   background-blend-mode: multiply;
+    //   opacity: 0;
+    // }
+    .info {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      transition: all $time;
+      transform: translateY(-150%);
+      padding: 10px;
+    }
+    .categories {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      max-width: 90%;
+      transition: all $time;
+      transform: translateY(150%);
+    }
+    &:not(:hover) {
+      background-color: transparent !important;
+    }
+    &:hover {
+      background-blend-mode: multiply;
+      .info,
+      .categories {
+        transform: translateY(0);
+      }
+      .member-bg-holder {
+        background-blend-mode: multiply;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.certeficated_sect {
+  .img_block {
+    padding: 0 0 20px;
+    @media (min-width: $min_medium) {
+      // padding: 20px 0 0;
+    }
+  }
+
+  .download_btn {
+    margin: 30px auto;
+    @media (min-width: $min_medium) {
+      margin: 0;
+    }
+  }
+}
+
+.jobs-post {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-top: solid 3px $light-grey;
+}
+
+.benefits-list {
+  padding-top: 20px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.background-color {
+  background-color: $dark-blue;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}

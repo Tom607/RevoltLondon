@@ -1,0 +1,200 @@
+.desc {
+  margin-top: 0;
+  .logo_block {
+    padding-top: 19px;
+  }
+  .content_block {
+    max-width: 700px;
+    padding-top: 20px;
+    @media (min-width: $min_medium) {
+      padding-top: 0;
+      padding-left: 44px;
+    }
+  }
+
+  p {
+    line-height: 1.2;
+    font-size: 18px;
+    @media (min-width: $min_xsmall) {
+      font-size: 20px;
+    }
+    @media (min-width: $min_small) {
+      font-size: 22px;
+    }
+    @media (min-width: $min_large) {
+      font-size: 22px;
+    }
+  }
+}
+
+.project_margin {
+  margin-top: 30px;
+  @media (min-width: $min_medium) {
+    margin-top: 60px;
+  }
+}
+
+.no_margin {
+  margin-top: 0;
+}
+
+.case_study_slider,
+.case_study_slider .slick-list,
+.case_study_slider .slick-list > * {
+  max-height: 408px;
+}
+
+.case_study {
+  &_slider {
+    &__sect {
+      position: relative;
+      .all_projects {
+        display: none;
+        @media (min-width: 576px) {
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: calc(100% / 3);
+          background: #000;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          span {
+            display: inline-block;
+            text-decoration: underline;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all $time;
+            @media (min-width: $min_medium) {
+              font-size: 28px;
+            }
+            @media (min-width: $min_large) {
+              font-size: 38px;
+            }
+            @media (min-width: $min_xlarge) {
+              font-size: 45px;
+            }
+            @media (min-width: 1400px) {
+              font-size: 50px;
+            }
+          }
+          &:hover {
+            span {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_slider {
+    position: relative;
+    overflow: hidden;
+    .slick-arrow {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      // opacity: 0;
+      font-size: 0;
+      border: none;
+      outline: none;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.75);
+      width: 50%;
+      cursor: none;
+      @media (min-width: 576px) {
+        width: calc(100% / 3);
+      }
+      &.slick-prev {
+        left: 0;
+        // cursor: url("./assets/images/cursor/next.svg") 30 20, auto;
+      }
+      &.slick-next {
+        right: 0;
+        // cursor: url("./assets/images/cursor/next_1.png") 30 20, auto;
+      }
+    }
+    .slide {
+      height: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.case-study-logo {
+  max-height: 40px;
+  opacity: 0.1 !important;
+}
+
+.prev-next-navigation {
+  display: flex;
+  max-width: 1140px;
+  padding: 0 10px;
+
+  > a {
+    width: 50%;
+    margin-right: 15px;
+    &:last-child{
+      margin-right: 0;
+    }
+    img {
+      opacity: 0.5;
+      transition: all $time;
+    }
+    @media (min-width: 576px) {
+      width: 33.33%;
+    }
+    background: #000;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.all_projects {
+      display: none;
+      @media (min-width: 576px) {
+        display: flex;
+        color: #fff;
+        span {
+          display: inline-block;
+          text-decoration: underline;
+          font-size: 20px;
+          font-weight: bold;
+          transition: all $time;
+          @media (min-width: $min_medium) {
+            font-size: 28px;
+          }
+          @media (min-width: $min_large) {
+            font-size: 38px;
+          }
+          @media (min-width: $min_xlarge) {
+            font-size: 45px;
+          }
+          @media (min-width: 1400px) {
+            font-size: 50px;
+          }
+        }
+        &:hover {
+          span {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}

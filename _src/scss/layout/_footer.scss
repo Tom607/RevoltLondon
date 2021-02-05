@@ -1,0 +1,108 @@
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+.footer {
+  padding: 0;
+  text-align: left;
+  margin-top: 50px;
+  @media (min-width: $min_small) {
+    padding-top: 0px;
+  }
+  @media (min-width: $min_medium) {
+    padding: 37px 0 75px 0;
+    text-align: left;
+  }
+  &.sticky-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .row {
+    & > div {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      @media (min-width: $min_medium) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__socials {
+    margin: 0;
+    padding: 0;
+    max-width: 180px;
+    text-align: left;
+    @media (min-width: 576px) {
+      max-width: 100%;
+    }
+    li {
+      position: relative;
+      list-style: none;
+      @media (min-width: $min_large) {
+        //padding-left: 10%;
+      }
+      &:not(:last-child) {
+        margin-bottom: 6px;
+        @media (min-width: $min_large) {
+          margin-bottom: 8px;
+        }
+      }
+      a {
+        font-weight: normal;
+        font-size: 16px;
+        @media (min-width: $min_large) {
+          font-size: 22px;
+        }
+        // &:before {
+        //   font-weight: normal;
+        //   position: absolute;
+        //   content: "→";
+        //   font-size: 30px;
+        //   color: #fff;
+        //   top: 50%;
+        //   left: 0;
+        //   transform: translateY(-50%);
+        //   @media (min-width: $min_large) {
+        //     font-size: 32px;
+        //   }
+        // }
+      }
+    }
+  }
+  &__logo {
+    padding: 10px 0;
+    text-align: left;
+
+    img {
+      display: inline-block;
+      max-width: 60px;
+    }
+  }
+  .newsletter_title {
+    a {
+      color: #fff;
+      border-bottom: 2px solid $primary;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 30px;
+      line-height: 1;
+      &:hover {
+        color: $primary;
+    }
+  }
+}
+
+  p {
+    line-height: 1.15;
+    font-size: 14px;
+  }
+  .privacy_policy_link {
+    font-weight: 800;
+    text-decoration: underline;
+    margin-top: 6px;
+    display: inline-block;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,265 @@
+.reports_slider {
+  &__sect {
+    margin-top: 5vw;
+  }
+  padding-right: 30px;
+  @media (min-width: $min_medium) {
+    padding-right: 100px;
+  }
+  @media (min-width: $min_xlarge) {
+    width: calc(100% + (100vw - 945px) / 2);
+    padding-right: 150px;
+  }
+  @media (min-width: 1400px) {
+    padding-right: 250px;
+    width: calc(100% + (100vw - 1045px) / 2);
+  }
+  // .slick-track,
+  .slick-list {
+    overflow: visible !important;
+  }
+  .slick-track {
+    // padding-right: 200% !important;
+  }
+  .report_slide {
+    padding: 15px 0 15px 15px;
+    max-height: calc(30vw+300px);
+    @media (min-width: $min_large){
+      max-height: calc(30vw+150px);
+    }
+    &:last-child{
+      padding-right: 0;
+    }
+    &__image {
+      margin-bottom: 24px;
+      img {
+        width: 100%;
+        display: block;
+        margin: 0;
+      }
+    }
+    &__content {
+      max-width: 475px;
+    }
+    h5 {
+      color: #fff;
+      margin-bottom: 10px;
+      max-width: 350px;
+      text-decoration: underline;
+    }
+  }
+}
+
+.more {
+  color: $light-grey;
+  line-height: 1.2;
+  font-size: 16px;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.fight_sect {
+  padding: 20px 0 0;
+  h1 {
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    font-size: 22px;
+    @media (min-width: $min_xsmall) {
+      font-size: 25px;
+    }
+    @media (min-width: $min_small) {
+      font-size: 35px;
+    }
+    @media (min-width: $min_medium) {
+      font-size: 45px;
+    }
+    @media (min-width: $min_large) {
+      font-size: 55px;
+    }
+    @media (min-width: $min_xlarge) {
+      font-size: 58px;
+    }
+    a {
+      display: inline-block;
+      position: relative;
+      min-width: 160px;
+      span {
+        display: block;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.1);
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        top: 90%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        height: 3px;
+      }
+    }
+    & > span {
+      font-weight: normal;
+    }
+  }
+}
+
+.related_content {
+  padding: 40px 0 20px;
+  display: none;
+  &.is-active {
+    display: block;
+  }
+
+  @media (min-width: $min_medium) {
+    padding: 60px 0 54px;
+  }
+  &--title {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    @media (min-width: $min_large) {
+      margin-bottom: 40px;
+      padding-left: 0;
+    }
+  }
+}
+.related_item {
+  display: block;
+  margin-bottom: 30px;
+
+  @media (min-width: $min_medium) {
+    margin-bottom: 0;
+  }
+  &--title {
+    margin: 10px 0 0;
+    font-weight: normal;
+    transition: all $time;
+    font-size: 24px;
+    border-left: 2px solid $light-grey;
+    padding: 0 0 0 10px;
+  }
+  &--img {
+    position: relative;
+    padding-bottom: 66.6%;
+    overflow: hidden;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      transition: all $time;
+    }
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+    .related_item--title {
+      color: $primary;
+    }
+  }
+}
+
+.what_your_march {
+  padding: 50px 0 60px;
+  @media (min-width: $min_medium) {
+    padding: 50px 0 90px;
+  }
+  @media (min-width: $min_large) {
+    padding: 50px 0 125px;
+  }
+  h4 {
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 30px;
+    @media (min-width: $min_medium) {
+      margin-bottom: 60px;
+    }
+    @media (min-width: $min_large) {
+      margin-bottom: 90px;
+    }
+  }
+  .img_block {
+    // border-left: 12px solid $primary;
+    // border-bottom: 12px solid $primary;
+    display: inline-block;
+  }
+}
+
+
+.fight-picker-overlay {
+  display: none;
+
+  position: fixed;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-content: center;
+  justify-content: center;
+  &.is-active {
+    display: flex;
+  }
+  ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+    list-style: none;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    &.is-active {
+      display: flex;
+    }
+
+    li {
+      font-size: 32px;
+      line-height: 1;
+      font-weight: bold;
+      color: #fff;
+      border-bottom: 3px solid #fff;
+      align-self: center;
+      margin-bottom: 32px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.pick-your-fight-post-detail {
+  display: none;
+  position: relative;
+  padding: 30px 15px;
+  .bg-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: 0;
+    background-size: cover;
+  }
+  .ajax-page-loader {
+    position: relative;
+  }
+}
+
+.let-start-content {
+  margin-top: 30px;
+}

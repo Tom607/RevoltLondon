@@ -1,0 +1,61 @@
+// $sans: "Open Sans", sans-serif;
+// $roboto: "Roboto", sans-serif;
+$font: "Revolt", sans-serif;
+$text_color: #333333;
+$primary: #ff6394;
+$dark-pink: #5c0021;
+$yellow: #ffb500;
+$light-green: #66ff70;
+$green: #005c05;
+$light-blue: #99e8ff;
+$blue: #00738f;
+$dark-blue: #003d47;
+$dark-grey: #111111;
+$light-grey: #777;
+$mid-grey: #191919;
+$white: #fff;
+
+// $grey: #808080;
+/* reset */
+$min-width: 320px;
+$max-width: 1250px;
+$base-bg: #fff;
+$main-color: #cb944c;
+$primary-color: #2b3056;
+$secondary-color: #3eade2;
+$base-font-size: 14px;
+$base-line-height: 18px;
+$base-font-family: Arial, sans-serif;
+$custom-font-family: "PtSans", sans-serif;
+$link-color: #100da9;
+$default-transition: all 0.2s linear;
+$shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+
+/* main variables */
+
+//text, titles
+$text-color: #000;
+$title-color: #000;
+$title-font-family: $custom-font-family;
+
+$font-size-h1: 42px;
+$line-height-h1: 47px;
+$font-size-h2: 32px;
+$line-height-h2: 37px;
+$font-size-h3: 28px;
+$line-height-h3: 32px;
+
+$time: 0.3s;
+$xlarge: 1200px;
+$large: 991px;
+$medium: 767px;
+$small: 640px;
+$xsmall: 480px;
+$xxsmall: 400px;
+
+$min_xlarge: 1201px;
+$min_large: 992px;
+$min_medium: 768px;
+$min_small: 641px;
+$min_xsmall: 481px;
+$min_xxsmall: 401px;
