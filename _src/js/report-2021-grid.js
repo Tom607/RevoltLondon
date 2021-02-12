@@ -2,8 +2,46 @@ new gridjs.Grid({
   columns: [
     {
       name: "Issue",
+      width: "150px",
     },
-    { name: "Category" },
+    {
+      name: "Category",
+      width: "100px",
+      attributes: (cell) => {
+        // add these attributes to the td elements only
+        if (cell === "Environment") {
+          return {
+            "data-cell-content": cell,
+            style: "color: #003000",
+          };
+        }
+        if (cell === "Political") {
+          return {
+            "data-cell-content": cell,
+            style: "color: #00738f",
+          };
+        }
+
+        if (cell === "Social") {
+          return {
+            "data-cell-content": cell,
+            style: "color: #ffb500",
+          };
+        }
+        if (cell === "Technology") {
+          return {
+            "data-cell-content": cell,
+            style: "color: #ff6394",
+          };
+        }
+        if (cell === "Economic") {
+          return {
+            "data-cell-content": cell,
+            style: "color: #e84033",
+          };
+        }
+      },
+    },
     { name: "Overall Rank" },
     { name: "Movement", sort: 0 },
     { name: "Overall Score" },
