@@ -1,8 +1,7 @@
 /*
 Theme Name: Revolt v2
 Theme URI:
-Author: Lattimore and Friends
-Author URI: https://lattimoreandfriends.com/
+Author: Lattimore and Friends (Tom Austin)
 */
 @import "base/_fonts";
 @import "utils/_mixins";
@@ -18,3 +17,4 @@ Author URI: https://lattimoreandfriends.com/
 @import "layout/about";
 @import "layout/tools";
 @import "layout/hustle";
+@import "_src/scss/base/gridjs.css";

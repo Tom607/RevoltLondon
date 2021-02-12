@@ -19,7 +19,15 @@ setInterval(function() {
   }
 }, 250);
 
-//balancetext http://www.pagetoscreen.net/journal/item/balancing_long_lines_in_headings
+$("#open-button").click(function() {
+  $("body").toggleClass("stop-scrolling"), $(".overlay").fadeIn("fast");
+});
+
+$("#close-button").click(function() {
+  $("body").toggleClass("stop-scrolling"), $(".overlay").fadeOut("fast");
+});
+
+// balancetext http://www.pagetoscreen.net/journal/item/balancing_long_lines_in_headings
 
 !(function(a) {
   "use strict";
@@ -30,12 +38,7 @@ setInterval(function() {
     a(".balance-text").balanceText();
   }
   var b = document.documentElement.style,
-    c =
-      b.textWrap ||
-      b.WebkitTextWrap ||
-      b.MozTextWrap ||
-      b.MsTextWrap ||
-      b.OTextWrap;
+    c = b.textWrap || b.WebkitTextWrap || b.MozTextWrap || b.MsTextWrap || b.OTextWrap;
   d.prototype.reset = function() {
     (this.index = 0), (this.width = 0);
   };
@@ -43,9 +46,7 @@ setInterval(function() {
       return Boolean(a.match(/^\s$/));
     },
     f = function(b) {
-      b.find('br[data-owner="balance-text"]').replaceWith(
-        document.createTextNode(" ")
-      );
+      b.find('br[data-owner="balance-text"]').replaceWith(document.createTextNode(" "));
       var c = b.find('span[data-owner="balance-text"]');
       if (c.length > 0) {
         var d = "";
@@ -56,10 +57,7 @@ setInterval(function() {
       }
     },
     g = function(a) {
-      return (
-        (b = a.get(0).currentStyle || window.getComputedStyle(a.get(0), null)),
-        "justify" === b.textAlign
-      );
+      return (b = a.get(0).currentStyle || window.getComputedStyle(a.get(0), null)), "justify" === b.textAlign;
     },
     h = function(b, c, d) {
       c = a.trim(c);
@@ -78,9 +76,7 @@ setInterval(function() {
       );
     },
     i = function(a, b) {
-      return (
-        0 === b || b === a.length || (e(a.charAt(b - 1)) && !e(a.charAt(b)))
-      );
+      return 0 === b || b === a.length || (e(a.charAt(b - 1)) && !e(a.charAt(b)));
     },
     j = function(a, b, c, d, e, f, g) {
       for (var h; ; ) {
@@ -88,9 +84,7 @@ setInterval(function() {
         if (
           (a.text(b.substr(0, f)),
           (h = a.width()),
-          0 > e
-            ? d >= h || 0 >= h || 0 === f
-            : h >= d || h >= c || f === b.length)
+          0 > e ? d >= h || 0 >= h || 0 === f : h >= d || h >= c || f === b.length)
         )
           break;
         f += e;
@@ -105,9 +99,7 @@ setInterval(function() {
             c = 5e3;
           f(b);
           var e = "";
-          b.attr("style") &&
-            b.attr("style").indexOf("line-height") >= 0 &&
-            (e = b.css("line-height")),
+          b.attr("style") && b.attr("style").indexOf("line-height") >= 0 && (e = b.css("line-height")),
             b.css("line-height", "normal");
           var i = b.width(),
             k = b.height(),
@@ -125,26 +117,13 @@ setInterval(function() {
             q = b.height(),
             r = "pre-wrap" === l ? 0 : q / 4;
           if (i > 0 && p > i && c > p) {
-            for (
-              var s = b.text(),
-                t = "",
-                u = "",
-                v = g(b),
-                w = Math.round(k / q),
-                x = w;
-              x > 1;
-
-            ) {
+            for (var s = b.text(), t = "", u = "", v = g(b), w = Math.round(k / q), x = w; x > 1; ) {
               var y = Math.round((p + r) / x - r),
                 z = Math.round((s.length + 1) / x) - 1,
                 A = new d();
               j(b, s, i, y, -1, z, A);
               var B = new d();
-              (z = A.index),
-                j(b, s, i, y, 1, z, B),
-                A.reset(),
-                (z = B.index),
-                j(b, s, i, y, -1, z, A);
+              (z = A.index), j(b, s, i, y, 1, z, B), A.reset(), (z = B.index), j(b, s, i, y, -1, z, A);
               var C;
               (C =
                 0 === A.index
@@ -155,10 +134,7 @@ setInterval(function() {
                   ? A.index
                   : B.index),
                 (u = s.substr(0, C)),
-                v
-                  ? (t += h(b, u, i))
-                  : ((t += u.trimRight()),
-                    (t += '<br data-owner="balance-text" />')),
+                v ? (t += h(b, u, i)) : ((t += u.trimRight()), (t += '<br data-owner="balance-text" />')),
                 (s = s.substr(C)),
                 x--,
                 b.text(s),

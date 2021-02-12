@@ -70,9 +70,4 @@ new gridjs.Grid({
   sort: true,
   fixedHeader: true,
   height: "800px",
-  className: {
-    th: "table-header",
-    table: "table",
-    td: "table-cell",
-  },
 }).render(document.getElementById("report-2021-table"));

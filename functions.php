@@ -72,7 +72,6 @@ function theme_styles()
   // wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
   // Example with internal file
   wp_enqueue_style('bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css');
-  wp_enqueue_style('gridjs', get_template_directory_uri() . '/node_modules/gridjs/dist/theme/mermaid.min.css');
   wp_enqueue_style('aos', get_template_directory_uri() . '/node_modules/aos/dist/aos.css');
   wp_enqueue_style('revolt-css', get_template_directory_uri() . '/style.min.css');
 }

@@ -34,6 +34,7 @@ gulp.task("browserSync", () => {
   });
 
   gulp.watch("./_src/scss/**/**/*.scss", gulp.parallel("sass"));
+  gulp.watch("./_src/scss/**/**/*.css", gulp.parallel("sass"));
   gulp.watch("./**/*.php").on("change", browserSync.reload);
   gulp.watch("./_src/js/**/**/*.js", gulp.parallel("scripts"));
   gulp.watch("./_src/js/vendor/*.js", gulp.parallel("libs"));
@@ -113,12 +114,7 @@ gulp.task("imagemin", () =>
 // ZIP Theme
 gulp.task("zip", function(done) {
   gulp
-    .src([
-      "!./{node_modules/, node_modules/**}",
-      "!.gitignore",
-      "!./git/**/*",
-      "**/*",
-    ])
+    .src(["!./{node_modules/, node_modules/**}", "!.gitignore", "!./git/**/*", "**/*"])
     .pipe(zip(package.name + ".zip"))
     .pipe(gulp.dest("./"));
 
