@@ -3,13 +3,13 @@ Theme Name: Revolt v2
 Theme URI:
 Author: Lattimore and Friends (Tom Austin)
 */
-@import "base/_fonts";
-@import "utils/_mixins";
-@import "utils/_variables";
+@import "base/fonts";
+@import "utils/mixins";
+@import "utils/variables";
+@import "base/content";
 
 @import "layout/header";
 @import "layout/footer";
-@import "layout/content";
 @import "layout/home";
 @import "layout/overview_page";
 @import "layout/blog";
@@ -17,4 +17,4 @@ Author: Lattimore and Friends (Tom Austin)
 @import "layout/about";
 @import "layout/tools";
 @import "layout/hustle";
-@import "./assets/css/gridjs.css";
+@import "./_src/css/gridjs.css";

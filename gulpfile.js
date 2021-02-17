@@ -34,8 +34,7 @@ gulp.task("browserSync", () => {
   });
 
   gulp.watch("./_src/scss/**/**/*.scss", gulp.parallel("sass"));
-  gulp.watch("./_src/scss/**/**/*.css", gulp.parallel("sass"));
-  gulp.watch("./**/*.php").on("change", browserSync.reload);
+  gulp.watch(["./**/*.php", "./**/*.css"]).on("change", browserSync.reload);
   gulp.watch("./_src/js/**/**/*.js", gulp.parallel("scripts"));
   gulp.watch("./_src/js/vendor/*.js", gulp.parallel("libs"));
 });
