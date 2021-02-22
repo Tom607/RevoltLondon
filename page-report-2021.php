@@ -127,9 +127,9 @@ if (have_posts()) :
 
 
     <section>
-      <div class="container">
+      <div class="container-flex">
         <div class="row">
-          <div class="col-md-10 offset-lg-1" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12 px-5" data-aos="fade-up" data-aos-delay="100">
             <div id="report-2021-table"></div>
           </div>
     </section>
