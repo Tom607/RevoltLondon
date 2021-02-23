@@ -25,7 +25,7 @@ if (have_posts()) :
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 col-md-10 offset-lg-2" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 col-md-10 offset-lg-1" data-aos="fade-up" data-aos-delay="200">
             <h3>
               The 50 issues that matter most to people this year
             </h3>
@@ -59,10 +59,10 @@ if (have_posts()) :
       <div class="container table-content">
         <div class="row">
           <div class="col-lg-6 col-md-10 offset-lg-2">
-            <h4 data-aos="fade-up">The Index</h4>
-            <p data-aos=" fade-up" data-aos-delay="200">We worked with research company Attest to ask 1600 people across 4 markets to tell us which issues they found to be the most important to them. Split into two parts, we asked for unprompted answers to the question, before prompting them with 50 predefined issues. </p>
-            <p data-aos="fade-up" data-aos-delay="200">These prompted issues were ranked on a scale of 5 from ‘one of the most important’ to ‘not important at all’ - each response was assigned a corresponding value to create total scores for each issue, as follows: </p>
-            <table data-aos="fade-up" data-aos-delay="300">
+            <h4 data-aos="fade-up" data-aos-delay="100">The Index</h4>
+            <p data-aos="fade-up" data-aos-delay="200">We worked with research company Attest to ask 1600 people across 4 markets to tell us which issues they found to be the most important to them. Split into two parts, we asked for unprompted answers to the question, before prompting them with 50 predefined issues. </p>
+            <p data-aos="fade-up" data-aos-delay="300">These prompted issues were ranked on a scale of 5 from ‘one of the most important’ to ‘not important at all’ - each response was assigned a corresponding value to create total scores for each issue, as follows: </p>
+            <table data-aos="fade-up" data-aos-delay="400">
               <th>Response</th>
               <th>Value</th>
               <tr>
@@ -176,7 +176,7 @@ if (have_posts()) :
         <div class="row">
           <div class="col-lg-4 col-md-5 offset-lg-1 pb-5" data-aos="fade-up" data-aos-delay="200">
             <p>To download the full report, sign up to our newsletter. We do not share this information and you can unsubscribe at any time. For more information please read our <a href="<?php echo esc_url(get_page_link(3)); ?>">Privacy Policy</a>.</p>
-            <p class="grey" data-aos="fade-up" data-aos-delay="300">Should you be interested in further breakdowns of the Index (eg. issue rankings by gender, household income etc), or want further insights that could benefit your business, please get in touch by emailing: <a href="mailto:alex@revoltlondon.com">alex@revoltlondon.com</a></p>
+            <p class="grey" data-aos="fade-up" data-aos-delay="300">Should you be interested in further breakdowns of the Index (eg. issue rankings by gender, household income etc), or want further insights that could benefit your business, please get in touch by emailing: <a href="mailto:jenny@revoltlondon.com">jenny@revoltlondon.com</a></p>
 
           </div>
           <div class="col-lg-5 col-md-6 offset-lg-1" data-aos="fade-up" data-aos-delay="300">
