@@ -29,13 +29,24 @@ if (have_posts()) :
             <h3>
               The 50 issues that matter most to people this year
             </h3>
-            <p class="grey">At Revolt, we’re often asked by our clients how they can stand for something that matters to their audience. Following a landmark year, it felt like an opportune moment to pause and take stock of what people really care about. The Causes That Count 2021 study surveyed 1600 people across the US, the UK, China and Brazil to paint a uniquely global picture. We hope that this annual index will provide further insights in the years to come.</p>
+            <p class="grey">We surveyed 1600 people across the US, UK, China and Brazil to find out how much they cared about a range of issues effecting their lives.</p>
 
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Table starts -->
     <section>
+      <div class="container-flex">
+        <div class="row">
+          <div class="col-12 px-5" data-aos="fade-up" data-aos-delay="100">
+            <div id="report-2021-table"></div>
+          </div>
+    </section>
+    <!-- Table ends -->
+
+    <!-- <section>
       <div class="container">
         <div class="row">
           <div class="col-md-10 offset-lg-1" data-aos="fade-up" data-aos-delay="100">
@@ -43,7 +54,7 @@ if (have_posts()) :
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section>
       <div class="container table-content">
         <div class="row">
@@ -119,20 +130,10 @@ if (have_posts()) :
                 </table>
               </div>
             </div>
-
-
           </div>
         </div>
     </section>
 
-
-    <section>
-      <div class="container-flex">
-        <div class="row">
-          <div class="col-12 px-5" data-aos="fade-up" data-aos-delay="100">
-            <div id="report-2021-table"></div>
-          </div>
-    </section>
 
     <section>
       <div class="container pb-5">
@@ -174,8 +175,8 @@ if (have_posts()) :
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-5 offset-lg-1 pb-5" data-aos="fade-up" data-aos-delay="200">
-            <p>We are really excited to share this report with you, in return we ask you to leave a contact email address which we will use to keep you up to date with future reports and findings directly from Revolt via our monthly newsletter. We do not share this information and you can unsubscribe at any time. For more information please read our <a href="<?php echo esc_url(get_page_link(3)); ?>">Privacy Policy.</a></p>
-            <p class="grey" data-aos="fade-up" data-aos-delay="300">Should you be interested in further breakdowns of the Index (eg. issue rankings by gender, household income etc), or want further insights that could benefit your business, please get in touch by emailing <a href="mailto:alex@revoltlondon.com">alex@revoltlondon.com</a></p>
+            <p>To download the full report, sign up to our newsletter. We do not share this information and you can unsubscribe at any time. For more information please read our <a href="<?php echo esc_url(get_page_link(3)); ?>">Privacy Policy</a>.</p>
+            <p class="grey" data-aos="fade-up" data-aos-delay="300">Should you be interested in further breakdowns of the Index (eg. issue rankings by gender, household income etc), or want further insights that could benefit your business, please get in touch by emailing: <a href="mailto:alex@revoltlondon.com">alex@revoltlondon.com</a></p>
 
           </div>
           <div class="col-lg-5 col-md-6 offset-lg-1" data-aos="fade-up" data-aos-delay="300">
