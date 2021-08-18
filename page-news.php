@@ -41,7 +41,7 @@ if (have_posts()) :
 
               $post_id = $post['post'];
           ?>
-              <div class="col-md-6 py-4" data-aos="fade-up" data-aos-delay="<?php echo $key * 50; ?>">
+              <div class="col-md-6 py-5" data-aos="fade-up" data-aos-delay="<?php echo $key * 50; ?>">
 
 
                   <a href="<?php the_permalink($post_id); ?>" class="hover" data-mouse-title="<?php echo get_the_title($post_id); ?>">
@@ -62,7 +62,7 @@ if (have_posts()) :
                   <p class="grey">
                     <?php echo get_the_excerpt($post_id); ?>
                   </p>
-                  <p class="post-date"><?php $post_date = get_the_date('j F Y', $post = $post_id); echo $post_date ?></p>
+                  <!-- <p class="post-date"><?php $post_date = get_the_date('j F Y', $post = $post_id); echo $post_date ?></p> -->
 
                   </div>
 

@@ -80,7 +80,7 @@ if (have_posts()) :
 
     <!-- TEAM GRID SECTION -->
 
-    <section class="module">
+    <!-- <section class="module">
       <div class="container">
         <div class="row">
           <div class="col-md-9 offset-lg-1">
@@ -154,11 +154,11 @@ if (have_posts()) :
 
       </div>
       </div>
-    </section>
+    </section> -->
 
 
 
-<!-- B CORP -->
+    <!-- B CORP -->
     <section class="module">
       <div class="container">
         <div class="row">
@@ -177,15 +177,15 @@ if (have_posts()) :
         <div class="row">
           <div class="col-lg-1 col-md-2 col-3 offset-md-1 py-5" data-aos="fade-up">
             <a href="https://bcorporation.net/about-b-corps">
-            <?php
-            $image = get_field('b_corporation_logo');
-            if ($image) :
-            ?>
-              <div class="img_block">
-                <img src="<?php echo $image["url"]; ?>" alt="<?php echo $image["alt"]; ?>">
-              </div>
+              <?php
+              $image = get_field('b_corporation_logo');
+              if ($image) :
+              ?>
+                <div class="img_block">
+                  <img src="<?php echo $image["url"]; ?>" alt="<?php echo $image["alt"]; ?>">
+                </div>
             </a>
-            <?php endif; ?>
+          <?php endif; ?>
           </div>
         </div>
 
@@ -200,9 +200,9 @@ if (have_posts()) :
     <!-- DIVIDER IMAGE -->
 
     <!-- <?php
-    $image = get_field('team_photo');
-    if ($image) :
-    ?>
+          $image = get_field('team_photo');
+          if ($image) :
+          ?>
       <section class="module">
         <div class="container">
           <div class="row">
@@ -218,7 +218,7 @@ if (have_posts()) :
 
 
 
-<!-- IMPACT REPORT -->
+    <!-- IMPACT REPORT -->
     <section class="module" data-aos="fade-up">
       <div class="container">
         <div class="row">

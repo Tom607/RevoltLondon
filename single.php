@@ -29,7 +29,7 @@ if (have_posts()) :
               <?php the_field('description'); ?>
             </h4>
 
-            <p class="post-date grey"><?php $post_date = the_date('j F Y'); echo $post_date ?></p>
+            <!-- <p class="post-date grey"><?php $post_date = the_date('j F Y'); echo $post_date ?></p> -->
 
           </div>
         </div>

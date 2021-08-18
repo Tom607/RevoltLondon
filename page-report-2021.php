@@ -29,7 +29,7 @@ if (have_posts()) :
             <h3>
               The 50 issues that matter most to people this year
             </h3>
-            <p class="grey">We surveyed 1600 people across the US, UK, China and Brazil to find out how much they cared about a range of issues effecting their lives.</p>
+            <p class="grey">We surveyed 1600 people across the US, UK, China and Brazil to find out how much they cared about a range of issues affecting their lives.</p>
 
           </div>
         </div>
